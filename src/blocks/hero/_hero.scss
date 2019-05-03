@@ -1,0 +1,31 @@
+/* hero */
+.hero{
+  &__container{
+    height: 405px;
+    width: 100%;
+    position: relative;
+    background-image: -moz-linear-gradient(-180deg, rgb(53, 238, 246) 0%, rgb(112, 38, 159) 100%);
+    background-image: -webkit-linear-gradient(-180deg, rgb(53, 238, 246) 0%, rgb(112, 38, 159) 100%);
+    background-image: -ms-linear-gradient(-180deg, rgb(53, 238, 246) 0%, rgb(112, 38, 159) 100%);
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    flex-direction: column;
+  }
+  &__title{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 90px;
+    margin-right: 25px;
+    text-align: center;
+  }
+  &__breadcrumbs{
+    color: #fff;
+    margin-top: 15px;
+  }
+}

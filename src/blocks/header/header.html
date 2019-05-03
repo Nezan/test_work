@@ -1,0 +1,79 @@
+<header class="navbar navbar__top">
+  <div class="navbar__container container">
+    <div class="logo navbar__logo">
+      <img src="img/logo.png" alt="" class="logo__img">
+    </div>
+    <!-- / logo -->
+    <nav class="nav navbar__nav">
+      <div class="nav__button">
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+          <path class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+        </svg>
+      </div> 
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Home <i class="fas fa-chevron-down"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Pages <i class="fas fa-chevron-down"></i></a>
+        </li>
+        <li class="nav__item nav__item-submenu">
+          <a href="#" class="nav__link"> Portfolio <i class="fas fa-chevron-down"></i></a>
+            <ul class="nav__submenu nav__submenu-first">
+              <li class="nav__subitem"><a href="#" class="nav__link">Classic</a>
+              </li>
+              <li class="nav__subitem" data-menu="#menu-1"><a href="#" class="nav__link">Sortable grid with text</a>
+                <ul class="nav__submenu nav__submenu-second" id="menu-1">
+                  <li class="nav__subitem"><a href="#" class="nav__link">2 columns</a></li>
+                  <li class="nav__subitem"><a href="#" class="nav__link">3 columns</a></li>
+                  <li class="nav__subitem"><a href="#" class="nav__link">3 columns with sidebar</a></li>
+                  <li class="nav__subitem"><a href="#" class="nav__link">4 columns</a></li>
+                </ul>
+              </li>
+              <li class="nav__subitem"><a href="#" class="nav__link">Sortable grid without text</a></li>
+              <li class="nav__subitem" data-menu="#menu-2"><a href="#" class="nav__link">Sortable masonry</a>
+                <ul class="nav__submenu nav__submenu-second" id="menu-2">
+                  <li class="nav__subitem"><a href="#" class="nav__link">1 columns</a></li>
+                  <li class="nav__subitem"><a href="#" class="nav__link">2 columns</a></li>
+                  <li class="nav__subitem"><a href="#" class="nav__link">2 columns with sidebar</a></li>
+                  <li class="nav__subitem"><a href="#" class="nav__link">3 columns</a></li>
+                </ul>
+              </li>
+              <li class="nav__subitem"><a href="#" class="nav__link">Single projects</a></li>
+            </ul>       
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Blog <i class="fas fa-chevron-down"></i></a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Features <i class="fas fa-chevron-down"></i></a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Shortcodes <i class="fas fa-chevron-down"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar__nav -->
+    <div class="search navbar__search">
+      <form class="search-form">
+        <div class="search-form__content">
+          <input type="search" class="search-form__control" placeholder="search...">
+          <div class="search-form__action">
+            <a href="#" class="search-form__link">
+              <div class="icon__wrap icon__wrap-primary">
+                <svg class="icon icon__primary">
+                  <use xlink:href="svg/symbol/sprite.svg#search"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- / search -->
+  </div>
+  <!-- / navbar__container -->
+</header>
+<!-- / navbar navbar__top -->

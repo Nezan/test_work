@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<title>gulp-scss-starter</title>
+		<meta name="theme-color" content="#c9e0e04d">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.min.css">
+	</head>
+	<body>
+		<div class="wrapper">
+		<div class="hero">
+		  <div class="hero__container">
+		    <header class="navbar navbar__top">
+		      <div class="navbar__container container">
+		        <div class="logo navbar__logo">
+		          <img src="img/logo.png" alt="" class="logo__img">
+		        </div>
+		        <!-- / logo -->
+		        <nav class="nav navbar__nav">
+		          <div class="nav__button">
+		            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+		              <path class="line top"
+		                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+		              <path class="line middle" d="m 30,50 h 40" />
+		              <path class="line bottom"
+		                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+		            </svg>
+		          </div> 
+		          <ul class="nav__list">
+		            <li class="nav__item">
+		              <a href="#" class="nav__link">Home <i class="fas fa-chevron-down"></i></a>
+		            </li>
+		            <li class="nav__item">
+		              <a href="#" class="nav__link">Pages <i class="fas fa-chevron-down"></i></a>
+		            </li>
+		            <li class="nav__item nav__item-submenu">
+		              <a href="#" class="nav__link"> Portfolio <i class="fas fa-chevron-down"></i></a>
+		                <ul class="nav__submenu nav__submenu-first">
+		                  <li class="nav__subitem"><a href="#" class="nav__link">Classic</a>
+		                  </li>
+		                  <li class="nav__subitem" data-menu="#menu-1"><a href="#" class="nav__link">Sortable grid with text</a>
+		                    <ul class="nav__submenu nav__submenu-second" id="menu-1">
+		                      <li class="nav__subitem"><a href="#" class="nav__link">2 columns</a></li>
+		                      <li class="nav__subitem"><a href="#" class="nav__link">3 columns</a></li>
+		                      <li class="nav__subitem"><a href="#" class="nav__link">3 columns with sidebar</a></li>
+		                      <li class="nav__subitem"><a href="#" class="nav__link">4 columns</a></li>
+		                    </ul>
+		                  </li>
+		                  <li class="nav__subitem"><a href="#" class="nav__link">Sortable grid without text</a></li>
+		                  <li class="nav__subitem" data-menu="#menu-2"><a href="#" class="nav__link">Sortable masonry</a>
+		                    <ul class="nav__submenu nav__submenu-second" id="menu-2">
+		                      <li class="nav__subitem"><a href="#" class="nav__link">1 columns</a></li>
+		                      <li class="nav__subitem"><a href="#" class="nav__link">2 columns</a></li>
+		                      <li class="nav__subitem"><a href="#" class="nav__link">2 columns with sidebar</a></li>
+		                      <li class="nav__subitem"><a href="#" class="nav__link">3 columns</a></li>
+		                    </ul>
+		                  </li>
+		                  <li class="nav__subitem"><a href="#" class="nav__link">Single projects</a></li>
+		                </ul>       
+		            </li>
+		            <li class="nav__item">
+		              <a href="#" class="nav__link">Blog <i class="fas fa-chevron-down"></i></a>
+		            </li>
+		            <li class="nav__item"><a href="#" class="nav__link">Features <i class="fas fa-chevron-down"></i></a>
+		            </li>
+		            <li class="nav__item"><a href="#" class="nav__link">Shortcodes <i class="fas fa-chevron-down"></i></a>
+		            </li>
+		          </ul>
+		        </nav>
+		        <!-- navbar__nav -->
+		        <div class="search navbar__search">
+		          <form class="search-form">
+		            <div class="search-form__content">
+		              <input type="search" class="search-form__control" placeholder="search...">
+		              <div class="search-form__action">
+		                <a href="#" class="search-form__link">
+		                  <div class="icon__wrap icon__wrap-primary">
+		                    <svg class="icon icon__primary">
+		                      <use xlink:href="svg/symbol/sprite.svg#search"></use>
+		                    </svg>
+		                  </div>
+		                </a>
+		              </div>
+		            </div>
+		          </form>
+		        </div>
+		        <!-- / search -->
+		      </div>
+		      <!-- / navbar__container -->
+		    </header>
+		    <!-- / navbar navbar__top -->
+		    <div class="hero__content container">
+		      <h1 class="hero__title">3 Column Sortable Masonry Portfolio</h1>
+		      <div class="breadcrumbs hero__breadcrumbs">
+		        <div class="breadcrumbs__list">
+		          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Home</a></li>
+		          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Portfolio</a></li>
+		          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Sortable masonry</a></li>
+		          <li class="breadcrumbs__item">3 columns</li>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<main class="content">
+		  <div class="content__wrap">
+		    <div class="content__container container">
+		      <div class="tabs content__tabs">
+		        <div class="tabs__action">
+		          <ul class="tabs__list">
+		            <li class="tabs__item tabs__item-active">All</li>
+		            <li class="tabs__item">3D</li>
+		            <li class="tabs__item">Illustration</li>
+		            <li class="tabs__item">Photography</li>
+		            <li class="tabs__item">Web</li>
+		          </ul>
+		        </div>
+		        <div class="tabs__info">
+		          <div class="tabs__grid">
+		            <div class="tabs__elem" id="img-1">
+		                <img src="img/img-1.png" alt="" class="tabs__image">
+		            </div>
+		            <div class="tabs__elem" id="img-2">
+		              <img src="img/img-2.png" alt="" class="tabs__image">
+		            </div>
+		            <div class="tabs__elem" id="img-2">
+		              <img src="img/img-3.png" alt="" class="tabs__image">
+		            </div>
+		            <div class="tabs__elem" id="img-1">
+		              <img src="img/img-6.png" alt="" class="tabs__image">
+		            </div>
+		            <div class="tabs__elem" id="img-3">
+		              <img src="img/img-5.png" alt="" class="tabs__image">
+		            </div>
+		            <div class="tabs__elem" id="img-4">
+		                <img src="img/img-4.png" alt="" class="tabs__image">
+		            </div>
+		            <div class="tabs__elem" id="img-4">
+		              <img src="img/img-7.png" alt="" class="tabs__image">
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <!-- /  content__tabs-->
+		      <div class="content__action">
+		        <button class="btn btn__primary">Load More</button>
+		      </div>
+		      <!-- / content__action -->
+		      <div class="content__border"></div>
+		    </div>
+		  </div>
+		  <!-- / content__wrap -->
+		</main>
+		<!-- / content -->
+		<footer class="footer">
+		  <div class="footer__top">
+		    <div class="footer__container container">
+		      <div class="footer__wrap">
+		        <div class="footer__col">
+		          <h4 class="footer__title">Shortly About Us</h4>
+		          <p class="footer__content">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros.
+		            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Suspendisse sollicitudin
+		            velit sed leo.</p>
+		        </div>
+		        <div class="footer__col">
+		          <h4 class="footer__title">Contact Us</h4>
+		          <div class="footer__contacts">
+		            <div class="footer__box">
+		              <ul class="footer__list footer__list-contacts">
+		              <li class="footer__item footer__item-contacts">
+		                <a href="#" class="footer__link footer__link-contacts">
+		                  <div class="icon__wrap icon__wrap-secondary">
+		                    <svg class="icon icon__secondary">
+		                      <use xlink:href="svg/symbol/sprite.svg#phone"></use>
+		                    </svg>
+		                  </div>
+		                  (123)-456-7890
+		                </a>
+		              </li>
+		              <li class="footer__item footer__item-contacts">
+		                <a href="#" class="footer__link footer__link-contacts">
+		                  <div class="icon__wrap icon__wrap-secondary">
+		                    <svg class="icon icon__secondary">
+		                      <use xlink:href="svg/symbol/sprite.svg#envelop"></use>
+		                    </svg>
+		                  </div>
+		                  info@companyname.com
+		                </a>
+		              </li>
+		              <li class="footer__item footer__item-contacts">
+		                <a href="#" class="footer__link footer__link-contacts">
+		                  <div class="icon__wrap icon__wrap-secondary">
+		                    <svg class="icon icon__secondary">
+		                      <use xlink:href="svg/symbol/sprite.svg#skype"></use>
+		                    </svg>
+		                  </div>
+		                skype.name
+		                </a>
+		              </li>
+		            </ul>
+		            </div>
+		            <div class="footer__box footer__box-right">
+		              <ul class="footer__list footer__list-contacts">
+		                <li class="footer__item footer__item-contacts">
+		                  <a href="#" class="footer__link footer__link-contacts">
+		                    <div class="icon__wrap icon__wrap-secondary">
+		                      <svg class="icon icon__secondary">
+		                        <use xlink:href="svg/symbol/sprite.svg#location"></use>
+		                      </svg>
+		                    </div>
+		                    8901 Marmora Road,
+		                    Glasgow, D04 89GR.
+		                  </a>
+		                </li>
+		              </ul>
+		              <div class="footer__action">
+		                <button class="btn btn__primary btn__primary-footer">Open in Google Maps</button>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="footer__col">
+		          <h4 class="footer__title">Stay Connected</h4>
+		                <ul class="footer__list footer__list-social">
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-facebook">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#facebook"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-twitter">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#twitter"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-google">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#google-plus"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-pin">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#pinterest2"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-dribbble">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#dribbble"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-flickr">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#flickr3"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-youtube">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#youtube"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-vimeo">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#vimeo"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-instagram">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#instagram"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                  <li class="footer__item">
+		                    <a href="#" class="footer__link footer__link-linkedin">
+		                      <div class="icon__wrap icon__wrap-primary">
+		                        <svg class="icon icon__primary">
+		                          <use xlink:href="svg/symbol/sprite.svg#linkedin2"></use>
+		                        </svg>
+		                      </div>
+		                    </a>
+		                  </li>
+		                </ul>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- / footer__top -->
+		  <div class="footer__bottom">
+		    <div class="footer__container container">
+		      <div class="footer__copy">
+		        <p class="footer__text">&copy; 2014 illusion. All Rights Reserved.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- / footer__bottom -->
+		</footer>
+		<!-- / footer -->
+		</div>
+		<script src="./js/main.min.js" defer></script>
+	</body>
+</html>
